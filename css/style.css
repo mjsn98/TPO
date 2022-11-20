@@ -1,0 +1,139 @@
+*,
+*befor,
+*after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #b599f5;
+}
+.home{
+    margin-top: 20px;
+    background-color: #b599f5;
+}
+.home .carousel-item{
+    max-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.carousel-control-prev:hover, .carousel-control-next:hover{
+    background-color: rgba(0, 0, 0, .3)
+}
+.menu {
+    background-color: rgb(80, 80, 136);
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    padding: 0 80px;
+}
+
+.menu_items {
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+
+}
+
+.menu_items li {
+    border-radius: 3px;
+    margin: 0 5px;
+
+}
+
+.menu_items li a {
+    text-decoration: none;
+    padding: 7px 11px;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    color: white;
+}
+
+.menu_items li:hover,
+li.active {
+    background-color: rgba(0, 0, 0, .3);
+    transition: .4s;
+}
+
+.btn-menu {
+    margin-right: 30px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+ul.show {
+    top: 65px;
+}
+
+@media screen and (max-width: 952px) {
+    .logo {
+        font-size: 30px;
+        padding-left: 16px;
+    }
+
+    .menu_items {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:858px) {
+    .menu {
+        height: 65px;
+    }
+
+    .btn-menu {
+        display: inline-flex;
+    }
+
+    .menu_items {
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 65px);
+        background-color: rgb(80, 80, 136);
+        top: -100vh;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .menu_items li {
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+
+    .menu_items li:hover {
+        background: none;
+    }
+
+    .menu_items li a {
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .menu_items li a:hover {
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, .3);
+        transition: .4s;
+    }
+
+    .logo {
+        font-size: 25px;
+        padding-left: 35px;
+
+    }
+}
