@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>itse-Insumos</title>
+    <title>IInsumos</title>
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/f4d1904851.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <script src="../js/app.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
 
 </head>
 
@@ -19,19 +23,41 @@
     <nav class="menu">
         <label class="logo">ItseInsumos</label>
         <ul class="menu_items">
-            <li class="active"><a href="../index.html">Inicio</a></li>
+            <li><a href="../index.html">Inicio</a></li>
             <li><a href="../templates/quienesSomos.html">Acerca</a></li>
             <li><a href="../templates/productos.html">Productos</a></li>
-            <li><a href="../templates/contacto.html">Contacto</a></li>
+            <li class="active"><a href="../templates/contacto.html">Contacto</a></li>
         </ul>
         <span class="btn-menu">
             <i class="fa-solid fa-bars"></i>
         </span>
     </nav>
-    <main>
-        
-    </main>
+    <main class="home" id="home">
+        <div class="div-contenido-contacto">
+            <div class="div-ubicacion">
+                <h1 class="titulo">Ubicacion</h1>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d882.6725300315205!2d-64.26072182133794!3d-27.757702402835687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b53af29b64e79%3A0x73a815295a0f8bed!2sConsejo%20Provincial%20de%20Vialidad!5e0!3m2!1ses!2sar!4v1668987628553!5m2!1ses!2sar"
+                    width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="div-suscribirse">
+                <h1 class="titulo">Recibir Novedades</h1>
+                <form class="formulario-novedades" action="" method="post">
+                    <input type="text" name="" id="form-name" placeholder="Ingrese su nombre" importan!>
+                    <input type="tel" name="" id="form-tel" placeholder="Telefono" important!>
+                    <input type="email" name="" id="form-email" placeholder="Ingrese su email" important!>
+                    <textArea placeholder="Observaciones"></textArea>
+                    <input type="submit" value="Suscribirse">
+                </form>
+            </div>
+        </div>
 
+
+    </main>
+    <footer>
+        Redes Sociales:    
+    </footer>
 </body>
 
 </html>

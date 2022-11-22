@@ -6,7 +6,14 @@
     outline: 0;
     box-sizing: border-box;
 }
-
+footer{
+    background-color:rgb(80, 80, 136);
+    color:white;
+    padding:10px;
+}
+h1{
+    text-align: center;
+}
 body {
     font-family: 'Raleway', sans-serif;
     background-color: #b599f5;
@@ -79,6 +86,46 @@ li.active {
 ul.show {
     top: 65px;
 }
+.div-suscribirse, .div-ubicacion{
+    justify-self: center;
+}
+
+.div-contenido-contacto{
+    display:grid;
+    grid-template-columns: 40vw 40vw;
+    gap:5px;
+    justify-content: space-evenly;
+}
+.formulario-novedades{
+    display:flex;
+    flex-direction: column;
+}
+.titulo{
+    color:rgb(60, 45, 73);
+}
+.div-info-qs{
+    padding:50px;
+    display:grid;
+    grid-template-columns: 40vw 40vw;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.img-ecommerce{
+    width: 400px;
+}
+.div-computadores,.div-smartphones,.div-gadgets{
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    justify-content: center;
+    gap:20px;
+}
+.img{
+    width: 200px;
+    height: 200px;
+    padding:10px;
+    justify-self: center;
+    border:2px solid rgb(201, 201, 201);
+}
 
 @media screen and (max-width: 952px) {
     .logo {
@@ -89,9 +136,27 @@ ul.show {
     .menu_items {
         font-size: 16px;
     }
+    .div-info-qs{
+        padding:50px;
+        display:grid;
+        grid-template-columns: 40vw;
+        justify-content: space-evenly;
+    }
 }
 
-@media screen and (max-width:858px) {
+@media screen and (max-width:780px) {
+    .div-computadores,.div-smartphones,.div-gadgets{
+        display: grid;
+        grid-template-columns: 80vw ;
+        justify-content: center;
+        gap:20px;
+    }
+    .div-info-qs{
+        display:grid;
+        grid-template-columns: 60vw;
+        padding:30px;
+        justify-content: center;
+    }
     .menu {
         height: 65px;
     }
@@ -136,4 +201,21 @@ ul.show {
         padding-left: 35px;
 
     }
+    .div-contenido-contacto{
+        display:grid;
+        grid-template-columns: 40vw;
+        gap:5px;
+        justify-content: space-evenly;
+    }
+    iframe{
+        width: 80vw;
+    }
+    .img-ecommerce{
+        width: 60vw;
+        align-self: center;
+    }
+    .p-acerca{
+        margin:10px 0;
+    }
+    
 }
