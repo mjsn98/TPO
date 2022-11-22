@@ -142,6 +142,9 @@ ul.show {
         grid-template-columns: 40vw;
         justify-content: space-evenly;
     }
+    i{
+        color:rgb(29, 29, 29);
+    }
 }
 
 @media screen and (max-width:780px) {

@@ -43,12 +43,13 @@
             </div>
             <div class="div-suscribirse">
                 <h1 class="titulo">Recibir Novedades</h1>
-                <form class="formulario-novedades" action="" method="post">
-                    <input type="text" name="" id="form-name" placeholder="Ingrese su nombre" importan!>
-                    <input type="tel" name="" id="form-tel" placeholder="Telefono" important!>
-                    <input type="email" name="" id="form-email" placeholder="Ingrese su email" important!>
+                <form class="formulario-novedades" name="formulario" action="" method="get">
+                    <input type="text" name="nombre" id="form-name" placeholder="Ingrese su nombre" required>
+                    <input type="text" name="edad" id="" placeholder="Ingrese su edad" required>
+                    <input type="tel" name="telefono" id="form-tel" placeholder="+xx-xxx-xxxxxxx" required>
+                    <input type="email" name="correo" id="form-email" placeholder="Ingrese su email" required>
                     <textArea placeholder="Observaciones"></textArea>
-                    <input type="submit" value="Suscribirse">
+                    <input type="submit" value="Suscribirse" id="button" onclick="validarEnvio()"><br>
                 </form>
             </div>
         </div>
@@ -56,7 +57,9 @@
 
     </main>
     <footer>
-        Redes Sociales:    
+        Redes Sociales:
+        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
     </footer>
 </body>
 
